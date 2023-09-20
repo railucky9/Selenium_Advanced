@@ -1,0 +1,17 @@
+package TestMaven.MavenDemo29;
+
+import org.openqa.selenium.WebDriver;
+
+
+public class validateTitle {
+	
+	String url ="https://www.selenium.dev/";
+	String expectedTitle = "Selenium";
+	
+	WebDriver driver;
+	
+	
+  @Test
+  public void f() {
+  }
+}

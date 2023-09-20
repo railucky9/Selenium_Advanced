@@ -1,0 +1,10 @@
+package AutoIT_Demo;
+
+public class FileUploadUsingAuto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

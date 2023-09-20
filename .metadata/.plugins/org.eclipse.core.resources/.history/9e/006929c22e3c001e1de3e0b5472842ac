@@ -1,0 +1,36 @@
+package DataDrivenFW;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.DataProvider;
+
+public class dataProviderDemo {
+	
+	WebDriver driver;
+	String url = "https://demo.guru99.com/v4/";
+	
+	
+  @Test(dataProvider = "supplyCredentials")
+  public void f(String userID, String password ) {
+	  System.out.println("User ID "+userID);
+	  System.out.println("Password "+password);
+  }
+
+  @DataProvider
+  public Object[][] supplyCredentials() {
+	  
+	  Object[][] myCredentials = new Object[3][2];
+	  
+	  myCredentials[0][0] = "mngr519603";
+	  myCredentials[0][1] = "dyvybAm";
+	  
+	  myCredentials[1][0] = "Hello World";
+	  myCredentials[1][1] = "12345";
+	  
+	  myCredentials[2][0] = "mngr519603";
+	  myCredentials[2][1] = "dyvybAm";
+	  
+	  
+    return myCredentials ;
+  }
+}

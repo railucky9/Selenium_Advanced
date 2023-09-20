@@ -1,0 +1,9 @@
+package TestMaven.MavenDemo29;
+
+import org.testng.annotations.Test;
+
+public class validateTitle {
+  @Test
+  public void f() {
+  }
+}

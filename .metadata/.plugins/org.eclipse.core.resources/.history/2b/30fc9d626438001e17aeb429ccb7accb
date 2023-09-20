@@ -1,0 +1,46 @@
+package testSikuli;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
+
+public class fileUploadSikuli {
+
+	public static void main(String[] args) throws Exception {
+	
+  
+		String url = "https://www.filemail.com/share/upload-file";
+		String filePath = "D:\\Selenium_Files\\Sikuli_Image";
+		String inputFilePath = "C:\\Resume\\";
+		WebDriver driver;
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Selenium_Files\\chromedriver-win64\\chromedriver.exe");
+		
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get(url);
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.id("addBtn"))).perform();
+		action.click().perform();
+		
+		Screen screen = new Screen();
+		
+		Pattern fileInputTextBox = new Pattern(filePath+"FileInputBox.PNG");
+		Pattern openButton = new Pattern(filePath+"openButton.PNG");
+		
+		screen.wait(fileInputTextBox, 20);
+		screen.type(fileInputTextBox, inputFilePath+"corejava1.pdf");
+		screen.click(openButton);
+		
+		
+		
+
+	}
+
+}

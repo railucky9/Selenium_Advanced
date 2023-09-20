@@ -1,0 +1,33 @@
+package testSikuli;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class fileUploadSikuli {
+
+	public static void main(String[] args) {
+	
+  
+		String url = "https://www.filemail.com/share/upload-file";
+		String filePath = "D:\\Selenium_Files\\Sikuli_Image";
+		String inputFilePath = "D:\\Selenium_Files\\";
+		WebDriver driver;
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Selenium_Files\\chromedriver-win64\\chromedriver.exe");
+		
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get(url);
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.id("addBtn"))).perform();
+		action.click().perform();
+		
+		Screen screen = new Screen();
+
+	}
+
+}

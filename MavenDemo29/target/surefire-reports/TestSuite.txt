@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 25.04 s <<< FAILURE! - in TestSuite
+f(dataDrivenFMUsingApachePOI.validationLogin)  Time elapsed: 2.578 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at dataDrivenFMUsingApachePOI.validationLogin.f(validationLogin.java:44)
+
+f(dataDrivenFMUsingApachePOI.validationLogin)  Time elapsed: 0.644 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=115.0.5790.171): User or Password is not valid
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a85111f08b22b1b313109c92eff641a0, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\luckr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64023}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64023/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a85111f08b22b1b313109c92eff641a0
+	at dataDrivenFMUsingApachePOI.validationLogin.f(validationLogin.java:41)
+
+f(dataDrivenFMUsingApachePOI.validationLogin)  Time elapsed: 0.619 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=115.0.5790.171): User or Password is not valid
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ed3e8dbc78af2cdad5530e841407cfc, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\luckr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64086}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64086/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5ed3e8dbc78af2cdad5530e841407cfc
+	at dataDrivenFMUsingApachePOI.validationLogin.f(validationLogin.java:41)
+

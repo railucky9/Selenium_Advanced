@@ -1,0 +1,40 @@
+package AutoIT_Demo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class FileUploadUsingAuto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver;
+		String url = "https://tus.io/demo";
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Selenium_Files\\chromedriver-win64\\chromedriver.exe");
+		
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get(url);
+		
+//		Actions action = new Actions(driver);
+//		action.moveToElement(driver.findElement(By.xpath("//input[@type='file']"))).perform();
+//		action.click().perform();
+		
+//		Actions action = new Actions(driver);
+//        // Locate the file input element
+//        By fileInputLocator = By.xpath("//input[@type='file']");
+//        // Click the file input element
+//        action.moveToElement(driver.findElement(fileInputLocator)).click().perform();
+		
+		 String script = "document.querySelector('input[type=\"file\"]').click();";
+	        ((JavascriptExecutor) driver).executeScript(script);
+
+
+	}
+
+}

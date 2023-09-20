@@ -1,0 +1,9 @@
+package RegressionTestCases;
+
+import org.testng.annotations.Test;
+
+public class regTC2 {
+  @Test
+  public void f() {
+  }
+}

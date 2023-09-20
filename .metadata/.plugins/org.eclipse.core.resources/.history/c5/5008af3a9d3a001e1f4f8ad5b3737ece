@@ -1,0 +1,9 @@
+package SystemTestCases;
+
+import org.testng.annotations.Test;
+
+public class sysTC2 {
+  @Test
+  public void f() {
+  }
+}

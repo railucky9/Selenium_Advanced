@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4773" started-at="2023-08-13T16:50:08Z" finished-at="2023-08-13T16:50:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4773" started-at="2023-08-13T16:50:08Z" finished-at="2023-08-13T16:50:13Z">
+      <class name="TestNG.homePageValidation">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNG.homePageValidation@2f686d1f]" name="beforeMethod" is-config="true" duration-ms="4529" started-at="2023-08-13T22:20:08Z" finished-at="2023-08-13T22:20:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validatePresenceOfLinkDownload()[pri:0, instance:TestNG.homePageValidation@2f686d1f]" name="validatePresenceOfLinkDownload" duration-ms="89" started-at="2023-08-13T22:20:12Z" finished-at="2023-08-13T22:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePresenceOfLinkDownload -->
+        <test-method status="PASS" signature="validateTitle()[pri:0, instance:TestNG.homePageValidation@2f686d1f]" name="validateTitle" duration-ms="10" started-at="2023-08-13T22:20:13Z" finished-at="2023-08-13T22:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNG.homePageValidation@2f686d1f]" name="afterMethod" is-config="true" duration-ms="126" started-at="2023-08-13T22:20:13Z" finished-at="2023-08-13T22:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestNG.homePageValidation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
